@@ -51,6 +51,12 @@ f'(x) = 3x^2 - 2y - 2xy' + 7y^6y' - 12x^2y - 4x^3y;
 - The Problem: x^3 - 2xy + y^7 - 4x^3y = 5, where y = (4 - tan(x)) /
   (sin(x) + 3x^2), is solved by approximately
 x = 2.8047
+- NOTE: this x is not the closest root to our initial guess: x(0) = 1
+  - This can be seen by the graph provided/running NewtonsMethod.m and analyzing 
+  the graph
+  - However, the solution obtained does make sense if you "eyeball" the tangent 
+  line to the function f(x) at f(1), it launches you toward the neighborhood of 
+  x = 2.8047 
 
 ## NewtonsMethod.m
 
