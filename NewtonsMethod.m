@@ -11,15 +11,15 @@ n_max = 25; % The maximum number of itterations befor failure
 
 % Choose a tolerance by uncommenting one of the two following lines:
 
-tolerance = 0.00000001; % Approximating x to within 10^(-8), for PROBLEM
+%tolerance = 0.00000001; % Approximating x to within 10^(-8), for PROBLEM
 % 1
-%tolerance = 0.0001; % Approximating x to within 10^(-4), for PROBLEM 3
+tolerance = 0.0001; % Approximating x to within 10^(-4), for PROBLEM 3
 
 
 % Choose an initial guess by uncommenting one of the two following lines:
 
-x_n = 1.75; % Initial guess of 1.75, for PROBLEM 1
-%x_n = 1; % Initial guess of 1, for PROBLEM 3
+%x_n = 1.75; % Initial guess of 1.75, for PROBLEM 1
+x_n = 1; % Initial guess of 1, for PROBLEM 3
 
 
 
@@ -28,8 +28,8 @@ for n=1: n_max
     % Choose the function for the problem you are trying to solve (should
     % also update initial condition, and tolerance if need be)
 
-    [f, fPrime] = function1(x_n); % PROBLEM 1
-    %[f, fPrime] = function3(x_n); % PROBLEM 3
+    %[f, fPrime] = function1(x_n); % PROBLEM 1
+    [f, fPrime] = function3(x_n); % PROBLEM 3
 
     x_next = x_n - f / fPrime;
 
