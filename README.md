@@ -23,7 +23,7 @@ x = 1.8393
 
 - To do this, not that the problem can be written as: 
 f(x) = 2x(1+x^2)^(-1) - arctan(x)
-- Bistion Method can be used to solce this problem
+- Bisection Method can be used to solve this problem
   - Bisection Method is in BisectionMethod.m  
   - This function of x is in function2.m
 
